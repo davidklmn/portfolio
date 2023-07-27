@@ -1,3 +1,9 @@
+:root {
+  --darkgrey: #262626;
+  --darkyellow: #F2B705;
+  --textcolor: #F2F2F2;
+}
+
 .App {
   text-align: center;
 }

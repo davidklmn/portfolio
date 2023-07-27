@@ -1,0 +1,21 @@
+import './navigation.css'
+import {ReactComponent as Logo} from '../pictures/davidklmn_logo.svg';
+
+export default function Navigation(){
+  return (
+    <nav>
+      <div className="nav-container">
+        <a href='/'><Logo className='logo'/></a>
+        <div className='navlink'>
+          <ul>
+            <div><a href='#home'>Home</a></div>
+            <div><a href='#about'>About</a></div>
+            <div><a href='#projects'>Projects</a></div>
+            <div><a href='#skills'>Skills</a></div>
+            <div><a href='#contact'>Contact</a></div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
+}

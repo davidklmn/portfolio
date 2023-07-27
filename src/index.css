@@ -11,7 +11,7 @@
 
 body {
   margin: 0;
-  font-family: 'JosefinSans';
+  font-family: 'JosefinSans' !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
