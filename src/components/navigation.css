@@ -1,4 +1,6 @@
 .nav-container{
+    position: fixed;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
@@ -9,7 +11,7 @@
 .logo{
     height: 30px;
     padding-right: 50px;
-    border-right: 2px solid black;
+    border-right: 1px solid black;
     filter: invert(100%) sepia(0%) saturate(2544%) hue-rotate(329deg) brightness(116%) contrast(90%);
 }
 
@@ -25,7 +27,28 @@
 }
 
 .navlink ul div a {
+    font-size: 0.75rem;
     font-weight: 500;
+    text-decoration: none;
+    color: var(--textcolor);
+    text-transform: uppercase;
+}
+
+.cta-container {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.message {
+    height: 30px;
+    width: 30px;
+    filter: invert(70%) sepia(87%) saturate(980%) hue-rotate(359deg) brightness(97%) contrast(97%);    transform: scaleX(-1);
+    margin-right: 10px;
+}
+
+.cta-container a{
+    font-weight: 700;
     text-decoration: none;
     color: var(--textcolor);
     text-transform: uppercase;

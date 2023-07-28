@@ -1,5 +1,6 @@
 import './navigation.css'
 import {ReactComponent as Logo} from '../pictures/davidklmn_logo.svg';
+import {ReactComponent as Message} from '../pictures/message.svg';
 
 export default function Navigation(){
   return (
@@ -14,6 +15,9 @@ export default function Navigation(){
             <div><a href='#skills'>Skills</a></div>
             <div><a href='#contact'>Contact</a></div>
           </ul>
+        </div>
+        <div className='cta-container'>   
+          <a href='#'><Message className='message'/>Hire Me!</a>
         </div>
       </div>
     </nav>
