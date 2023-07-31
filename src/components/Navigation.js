@@ -9,7 +9,7 @@ export default function Navigation(){
         <a href='/'><Logo className='logo'/></a>
         <div className='navlink'>
           <ul>
-            <div><a href='#home' className='active'>Home</a></div>
+            <div><a href='#home'>Home</a></div>
             <div><a href='#about'>About</a></div>
             <div><a href='#projects'>Projects</a></div>
             <div><a href='#skills'>Skills</a></div>

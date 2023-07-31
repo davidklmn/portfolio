@@ -69,11 +69,29 @@
         position: fixed;
         inset: 0 30% 0 0;
         background: var(--darkyellow);
-        padding: 3rem 1rem;
+        padding: 4.25rem 0;
     }
     
     .navlink ul {
+        padding: 0;
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .navlink ul div {
+        width: 100%;
+    }
+
+    .navlink ul div:hover a{
+        background-color: var(--darkgrey);
+        color: var(--darkyellow);
+        transition: 0.5s ease;
+    }
+
+    .navlink ul div a{
+        display: block;
+        color: var(--darkgrey);
+        font-size: 3rem;
+        padding: 1rem;
     }
 }
