@@ -6,6 +6,7 @@
     padding: 20px;
     align-items: center;
     background-color: var(--darkgrey);
+    z-index: 9999;
 }
 
 .logo{
@@ -34,6 +35,15 @@
     text-transform: uppercase;
 }
 
+.navlink ul div a:hover {
+    color: var(--darkyellow);
+    transition: 0.1s ease-in;
+}
+
+.navlink ul div a.active {
+    color: var(--darkyellow);
+}
+
 .cta-container {
     display: flex;
     margin-left: auto;
@@ -44,7 +54,7 @@
     height: 30px;
     width: 30px;
     filter: invert(70%) sepia(87%) saturate(980%) hue-rotate(359deg) brightness(97%) contrast(97%);    transform: scaleX(-1);
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .cta-container a{
@@ -52,4 +62,18 @@
     text-decoration: none;
     color: var(--textcolor);
     text-transform: uppercase;
+}
+
+@media (max-width: 750px){
+    .navlink {
+        position: fixed;
+        inset: 0 30% 0 0;
+        background: var(--darkyellow);
+        padding: 3rem 1rem;
+    }
+    
+    .navlink ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }

@@ -9,15 +9,16 @@ export default function Navigation(){
         <a href='/'><Logo className='logo'/></a>
         <div className='navlink'>
           <ul>
-            <div><a href='#home'>Home</a></div>
+            <div><a href='#home' className='active'>Home</a></div>
             <div><a href='#about'>About</a></div>
             <div><a href='#projects'>Projects</a></div>
             <div><a href='#skills'>Skills</a></div>
             <div><a href='#contact'>Contact</a></div>
           </ul>
         </div>
-        <div className='cta-container'>   
-          <a href='#'><Message className='message'/>Hire Me!</a>
+        <div className='cta-container'>
+            <Message className='message'/>
+            <a href='#hireme'>Hire Me!</a>
         </div>
       </div>
     </nav>
