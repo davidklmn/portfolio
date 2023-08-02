@@ -9,11 +9,16 @@
   src: local('JosefinSans'), url(./fonts/JosefinSans.ttf) format('ttf');
 }
 
+html{
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: 'JosefinSans' !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {

@@ -14,6 +14,7 @@
     padding-right: 50px;
     border-right: 1px solid black;
     filter: invert(100%) sepia(0%) saturate(2544%) hue-rotate(329deg) brightness(116%) contrast(90%);
+    z-index: 9999;
 }
 
 .navlink {
@@ -44,6 +45,15 @@
     color: var(--darkyellow);
 }
 
+.nav-toggle{
+    display: none;
+    padding-left: 2rem;
+    text-transform: uppercase;
+    border: none;
+    background-color: transparent;
+    color: var(--textcolor);
+}
+
 .cta-container {
     display: flex;
     margin-left: auto;
@@ -69,7 +79,14 @@
         position: fixed;
         inset: 0 30% 0 0;
         background: var(--darkyellow);
+        backdrop-filter: 1rem;
         padding: 4.25rem 0;
+        transform: translateX(-110%);
+        transition: 0.5s ease;
+    }
+
+    .navlink[data-visible='true']{
+        transform: translateX(0%);
     }
     
     .navlink ul {
@@ -93,5 +110,16 @@
         color: var(--darkgrey);
         font-size: 3rem;
         padding: 1rem;
+        cursor: pointer;
+    }
+
+    .nav-toggle{
+        display: block;
+        z-index: 2000;
+        font-weight: 700;
+        transition: 0.3s ease-in-out;
+    }
+    .toggle-open{
+        color: var(--darkgrey);
     }
 }
