@@ -6,7 +6,7 @@ import { useState } from 'react';
 export default function Navigation(){
 
   const [toggle, setToggle] = useState('false');
-  const [menu, setMenu] = useState('Menu')
+  const [menu, setMenu] = useState('Menu');
 
   function menuToggle(){
     const navToggle = document.querySelector('.nav-toggle');

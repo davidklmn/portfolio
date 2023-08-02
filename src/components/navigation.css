@@ -123,3 +123,9 @@
         color: var(--darkgrey);
     }
 }
+
+@media (min-width: 1500px){
+    .navlink{
+        width: 30%;
+    }
+}
