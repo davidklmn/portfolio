@@ -11,21 +11,18 @@ export default function Navigation(){
   function menuToggle(){
     const navToggle = document.querySelector('.nav-toggle');
 
-    navToggle.addEventListener('click', ()=>{
-       if(toggle === 'false'){
-        setToggle('true')
-        navToggle.classList.add('toggle-open')
-       } else {
-        setToggle('false')
-        navToggle.classList.remove('toggle-open')
-      }
-
-      if(menu === 'Menu'){
-        setMenu('Close')
-      } else {
-        setMenu('Menu')
-      }
-    })
+    if(toggle === 'false'){
+      setToggle('true')
+      navToggle.classList.add('toggle-open')
+     } else {
+      setToggle('false')
+      navToggle.classList.remove('toggle-open')
+    }
+    if(menu === 'Menu'){
+      setMenu('Close')
+    } else {
+      setMenu('Menu')
+    }
   }
 
   return (
