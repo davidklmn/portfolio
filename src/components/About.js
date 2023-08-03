@@ -30,9 +30,9 @@ export default function About() {
         scrollTrigger: {
           trigger: text.chars,
           start: "top 70%",
-          end: "top 40%",
+          end: "top 10%",
           scrub: true,
-          markers: true,
+          markers: false,
         },
         opacity: 0.2,
         stagger: 0.1,

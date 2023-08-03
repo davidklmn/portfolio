@@ -7,7 +7,7 @@ export default function Home() {
       <Vector className="blob" />
       <div className="itsme">
         <h2>Hello, I'm</h2>
-        <h1>DAVID KELEMEN</h1>
+        <h1>DAVID KELEMEN.</h1>
       </div>
     </div>
   );
