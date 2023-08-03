@@ -104,7 +104,8 @@
     .navlink ul div:hover a{
         background-color: var(--darkgrey);
         color: var(--darkyellow);
-        transition: 0.5s ease;
+        transition: 0.5s cubic-bezier(.47,1.64,.41,.84);
+        padding-left: 30px;
     }
 
     .navlink ul div a{

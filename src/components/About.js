@@ -29,10 +29,10 @@ export default function About() {
       gsap.from(text.chars, {
         scrollTrigger: {
           trigger: text.chars,
-          start: "top 90%",
+          start: "top 70%",
           end: "top 40%",
           scrub: true,
-          markers: false,
+          markers: true,
         },
         opacity: 0.2,
         stagger: 0.1,
