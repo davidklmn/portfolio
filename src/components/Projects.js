@@ -10,7 +10,13 @@ export default function Projects() {
             <p>Project</p>
             <h2>Portfolio</h2>
           </div>
-          <div className="card-image"></div>
+          <div className="card-image">
+            <img
+              className="proj-img"
+              src="/images/portfolio_site.png"
+              alt="portfolio"
+            ></img>
+          </div>
         </div>
         <div id="card2" className="cards"></div>
         <div id="card3" className="cards"></div>
