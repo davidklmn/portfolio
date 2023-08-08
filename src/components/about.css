@@ -20,3 +20,9 @@
 #split{
     font-kerning: none;
 }
+
+@media (max-width: 640px){
+    #split{
+        font-size: 5rem;
+    }
+}

@@ -24,9 +24,9 @@
 }
 
 .blob{
-height: 60%;
-
+    height: 60%;
     position: absolute;
     z-index: 0;
     transform: translateX(200px);
+    overflow: hidden;
 }

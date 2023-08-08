@@ -1,6 +1,8 @@
 .project-container{
     width: 100%;
-    height: 1200px;
+    height: 100%;
+    padding-bottom: 30px;
+
     background-color: var(--darkgrey);
     color: var(--textcolor);
     display: flex;
@@ -113,4 +115,40 @@
     height: 100%;
     object-fit: cover;
     border-top-left-radius: 25px;
+}
+
+
+@media (max-width: 1008px){
+    .card-container{
+        grid-template-rows: 400px 30px 400px 30px 400px 30px 400px;
+    }
+
+    .small-card .card-image {
+        width: 90%;
+    }
+
+    #card1 {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-column-end: 26;
+    }
+    
+    #card2 {
+        grid-row-start: 3;
+        grid-column-start: 1;
+        grid-column-end: 26;
+    }
+    
+    #card3 {
+        grid-row-start: 5; 
+        grid-column-start: 1;
+        grid-column-end: 26;
+    }
+    
+    #card4 {
+        grid-row-start: 7;
+        grid-column-start: 1;
+        grid-column-end: 26;
+    }
+    
 }
