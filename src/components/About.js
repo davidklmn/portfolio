@@ -29,8 +29,8 @@ export default function About() {
       gsap.from(text.chars, {
         scrollTrigger: {
           trigger: text.chars,
-          start: "top 70%",
-          end: "top 10%",
+          start: "top 50%",
+          end: "bottom 15%",
           scrub: true,
           markers: false,
         },

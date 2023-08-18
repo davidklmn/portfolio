@@ -11,16 +11,26 @@
 }
 
 .itsme{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     z-index: 1000;
 }
 
-.main-container h1{
+.itsme h1{
     font-size: 4rem;
+    letter-spacing: -3px;
 }
 
-.main-container h2 {
+.itsme h2 {
     font-size: 2rem;
     margin: 0;
+}
+
+.itsme>h1, .itsme>h2 {
+    text-shadow: 3px 2px #262626;
+    transform: rotate(-10deg);
 }
 
 .main-container .blob{
@@ -28,4 +38,13 @@
     position: absolute;
     z-index: 0;
     overflow: hidden;
+}
+
+@media (max-width: 555px){
+    .itsme h1 {
+        font-size: 3rem;
+    }
+    .itsme h2 {
+        font-size: 1.5rem;
+    }
 }
