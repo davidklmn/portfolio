@@ -24,9 +24,8 @@
 }
 
 .main-container .blob{
-    height: 60%;
+    height: 70%;
     position: absolute;
     z-index: 0;
-    transform: translateX(200px);
     overflow: hidden;
 }
