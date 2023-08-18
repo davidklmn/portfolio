@@ -23,7 +23,7 @@
     margin: 0;
 }
 
-.blob{
+.main-container .blob{
     height: 60%;
     position: absolute;
     z-index: 0;

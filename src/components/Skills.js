@@ -11,7 +11,7 @@ import { ReactComponent as IconReact } from "react-devicon/react/original/ReactO
 
 export default function Skills() {
   return (
-    <div className="skills-container">
+    <div id="skills" className="skills-container">
       <h1>Skills.</h1>
       <div className="skills-box">
         <div className="skill-row">
