@@ -12,6 +12,7 @@
 html{
   overflow: hidden;
   background-color: var(--darkgrey);
+  scroll-padding-top: 60px;
 }
 
 body {

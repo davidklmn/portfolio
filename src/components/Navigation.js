@@ -69,7 +69,7 @@ export default function Navigation() {
         </div>
         <div className="cta-container">
           <Message className="message" />
-          <a href="#hireme">Hire Me!</a>
+          <a href="#contact">Hire Me!</a>
         </div>
       </div>
     </nav>
