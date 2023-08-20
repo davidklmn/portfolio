@@ -2,23 +2,12 @@ import { useEffect } from "react";
 
 import "./about.css";
 
-import SplitType from "split-type";
-import Lenis from "@studio-freight/lenis";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import SplitType from "split-type";
 
 export default function About() {
   gsap.registerPlugin(ScrollTrigger);
-
-  //* Basic Lenis Smooth Scroll
-  const lenis = new Lenis();
-
-  function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
-  }
-
-  requestAnimationFrame(raf);
 
   //* Split Type which splits the p tag into divs
 
