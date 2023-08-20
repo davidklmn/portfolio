@@ -1,8 +1,8 @@
 import "./navigation.css";
+
 import { ReactComponent as Logo } from "../pictures/davidklmn_logo.svg";
 import { ReactComponent as IconLinkedin } from "react-devicon/linkedin/plain/LinkedinPlain.svg";
 
-import { ReactComponent as Message } from "../pictures/message.svg";
 import { useState } from "react";
 
 export default function Navigation() {
