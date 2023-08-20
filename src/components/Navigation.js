@@ -29,7 +29,7 @@ export default function Navigation() {
   return (
     <nav>
       <div className="nav-container">
-        <a href="/">
+        <a href="https://davidklmn.github.io/portfolio/">
           <Logo className="logo" />
         </a>
         <button
