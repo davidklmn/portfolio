@@ -44,6 +44,9 @@ export default function Skills() {
       autoAlpha: 0,
     });
   }
+  function blendHover(e) {
+    const ball = document.getElementById("cursor");
+  }
 
   return (
     <div
