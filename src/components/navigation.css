@@ -63,7 +63,7 @@
 .message {
     height: 30px;
     width: 30px;
-    filter: invert(70%) sepia(87%) saturate(980%) hue-rotate(359deg) brightness(97%) contrast(97%);    transform: scaleX(-1);
+    filter: invert(70%) sepia(87%) saturate(980%) hue-rotate(359deg) brightness(97%) contrast(97%);
     margin-right: 5px;
 }
 
@@ -72,6 +72,7 @@
     text-decoration: none;
     color: var(--textcolor);
     text-transform: uppercase;
+    
 }
 
 @media (max-width: 750px){
