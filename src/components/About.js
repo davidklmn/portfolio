@@ -9,6 +9,9 @@ import SplitType from "split-type";
 export default function About() {
   gsap.registerPlugin(ScrollTrigger);
 
+  ScrollTrigger.normalizeScroll(true);
+  ScrollTrigger.config({ ignoreMobileResize: true });
+
   //* Split Type which splits the p tag into divs
 
   useEffect(() => {
