@@ -71,7 +71,11 @@ export default function Navigation() {
         </div>
         <div className="cta-container">
           <IconLinkedin className="message" />
-          <a href="https://www.linkedin.com/in/davidkelemen/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/davidkelemen/"
+            target="_blank"
+            rel="noreferrer"
+          >
             Connect
           </a>
         </div>
