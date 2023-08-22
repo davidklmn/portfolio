@@ -1,4 +1,5 @@
 import "./projects.css";
+import scShot from "../pictures/portfolio_site.png";
 
 export default function Projects() {
   return (
@@ -11,11 +12,7 @@ export default function Projects() {
             <h2>Portfolio</h2>
           </div>
           <div className="card-image">
-            <img
-              className="proj-img"
-              src="/images/portfolio_site.png"
-              alt="portfolio"
-            ></img>
+            <img className="proj-img" src={scShot} alt="portfolio" />
           </div>
         </div>
         <div id="card2" className="cards small-card">
@@ -24,11 +21,7 @@ export default function Projects() {
             <h2>Portfolio</h2>
           </div>
           <div className="card-image">
-            <img
-              className="proj-img"
-              src="/images/portfolio_site.png"
-              alt="portfolio"
-            ></img>
+            <img className="proj-img" src={scShot} alt="portfolio" />
           </div>
         </div>
         <div id="card3" className="cards small-card">
@@ -37,11 +30,7 @@ export default function Projects() {
             <h2>Portfolio</h2>
           </div>
           <div className="card-image">
-            <img
-              className="proj-img"
-              src="/images/portfolio_site.png"
-              alt="portfolio"
-            ></img>
+            <img className="proj-img" src={scShot} alt="portfolio" />
           </div>
         </div>
         <div id="card4" className="cards">
@@ -50,11 +39,7 @@ export default function Projects() {
             <h2>Portfolio</h2>
           </div>
           <div className="card-image">
-            <img
-              className="proj-img"
-              src="/images/portfolio_site.png"
-              alt="portfolio"
-            ></img>
+            <img className="proj-img" src={scShot} alt="portfolio" />
           </div>
         </div>
       </div>
