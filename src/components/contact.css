@@ -25,7 +25,7 @@
 .form-container {
     margin-top: 60px;
     z-index: 1;
-    width: 800px;
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;

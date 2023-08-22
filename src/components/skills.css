@@ -69,6 +69,9 @@
         width: 100px;
         height: 100px;
     }
+    .skill-row {
+        display: block;
+    }
 }
 
 /* CURSOR */

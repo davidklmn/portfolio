@@ -6,7 +6,7 @@
     padding: 20px;
     align-items: center;
     background-color: var(--darkgrey);
-    z-index: 9999;
+    z-index: 300;
 }
 
 .logo{
@@ -14,7 +14,7 @@
     padding-right: 50px;
     border-right: 1px solid black;
     filter: invert(100%) sepia(0%) saturate(2544%) hue-rotate(329deg) brightness(116%) contrast(90%);
-    z-index: 9999;
+    z-index: 999;
 }
 
 .navlink {
@@ -119,12 +119,18 @@
 
     .nav-toggle{
         display: block;
-        z-index: 2000;
+        z-index: 200;
         font-weight: 700;
         transition: 0.3s ease-in-out;
     }
     .toggle-open{
         color: var(--darkgrey);
+    }
+}
+
+@media (max-width: 440px){
+    .navlink ul div a{
+        font-size: 2rem;
     }
 }
 
