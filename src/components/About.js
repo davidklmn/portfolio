@@ -40,8 +40,8 @@ export default function About() {
     <div id="about" className="about-container">
       <div>
         <p id="split">
-          I am an enthisuastic learner and thinker. I love to learn new things
-          and jump right into problemsolving. And I loooooove pizza!
+          I am an enthusiastic Front-End Developer who loves responsive
+          user-friendly design... and I looooove pizaaaaaa.
         </p>
       </div>
     </div>
