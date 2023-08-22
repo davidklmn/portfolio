@@ -1,23 +1,25 @@
-import { useEffect } from "react";
-
 import "./about.css";
 
+import { useEffect } from "react";
+
+//*Plugins
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SplitType from "split-type";
 
 export default function About() {
+  //* ScrollTrigger GSAP plugin registering
   gsap.registerPlugin(ScrollTrigger);
 
-  ScrollTrigger.normalizeScroll(true);
+  //* This config helps to prevent scroll jittering/jumping on iOs devices
   ScrollTrigger.config({ ignoreMobileResize: true });
 
-  //* Split Type which splits the p tag into divs
-
+  //* Using SplitType with useEffect which splits the p tag into spans
   useEffect(() => {
     function runSplit() {
       const text = new SplitType("#split", { types: "words, chars" });
 
+      //* ScrollTrigger
       gsap.from(text.chars, {
         scrollTrigger: {
           trigger: text.chars,
@@ -30,7 +32,7 @@ export default function About() {
         stagger: 0.1,
       });
     }
-
+    //* Run the function when the page loads
     runSplit();
   });
 
