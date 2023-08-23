@@ -35,7 +35,6 @@ export default function Skills() {
       onMouseLeave={mouseLeave}
       id="skills"
       className="skills-container"
-      allowFontScaling={false}
     >
       <div id="cursor"></div>
       <h1>Skills.</h1>
