@@ -27,7 +27,7 @@ function App() {
       <Home />
       <About />
       <Projects />
-      <Skills allowFontScaling={false} />
+      <Skills />
       <Contact />
     </main>
   );
