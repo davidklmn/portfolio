@@ -72,7 +72,7 @@
     background-color: var(--textcolor);
 }
 
-.form-container form #submit {
+#submit {
     margin: auto;
     font-size: 1.25rem;
     width: 100px;
