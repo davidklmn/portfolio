@@ -8,6 +8,9 @@
     background-color: var(--darkgrey);
     color: var(--textcolor);
 }
+.footer-container .heart {
+    color: var(--darkyellow);
+}
 
 .footer-container .contacts{
     width: 50%;

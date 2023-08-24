@@ -94,5 +94,6 @@
     }
     .form-container form #submit{
         text-indent: 0;
+        font-size: 1rem;
     }
 }
