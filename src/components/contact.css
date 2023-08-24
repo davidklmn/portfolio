@@ -82,20 +82,20 @@
     border: 2px solid var(--darkyellow);
     border-radius: 10px;
     text-indent: 0;
-    transition: all 0.5s;
+    transition: all 0.35s;
 }
 
 #submit:hover{
     background-color: var(--darkyellow);
     color: var(--darkgrey);
-    border: 2px solid var(--darkgrey);
 }
 
 #submit.submit-animation{
     width: 40px;
     border-radius: 50%;
     color: var(--darkyellow);
-    background-color: green;
+    background-color: rgb(3, 131, 3);
+    transform: rotate(720deg) ;
 }
 
 @media (max-width: 576px){
