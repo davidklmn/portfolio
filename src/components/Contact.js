@@ -10,9 +10,21 @@ export default function Contact() {
   const [userName, setUserName] = useState("");
   const [userEmail, setUserEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [emailSent, setEmailSent] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    // if (userName.length === 0) {
+    //   alert("Name cannot be empty");
+    //   return;
+    // } else if (userEmail.length === 0) {
+    //   alert("Email cannot be empty");
+    //   return;
+    // } else if (message.length === 0) {
+    //   alert("Write a message, please!");
+    //   return;
+    // }
 
     // emailjs
     //   .sendForm(
@@ -33,7 +45,18 @@ export default function Contact() {
     setUserName("");
     setUserEmail("");
     setMessage("");
+
+    submitSuccess();
   };
+
+  function submitSuccess() {
+    const submitButton = document.querySelector("#submit");
+
+    console.log("success!");
+    setEmailSent((current) => !current);
+    submitButton.textContent = "✓";
+    submitButton.disabled = true;
+  }
 
   return (
     <div id="contact" className="contact-container">
@@ -61,7 +84,14 @@ export default function Contact() {
             value={message}
             onChange={(e) => setMessage(e.currentTarget.value)}
           ></textarea>
-          <input type="submit" id="submit" value="Send" />
+          <button
+            type="submit"
+            id="submit"
+            value="Send"
+            className={emailSent ? "submit-animation" : ""}
+          >
+            Send
+          </button>
         </form>
       </div>
     </div>

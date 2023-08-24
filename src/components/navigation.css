@@ -121,7 +121,7 @@
         display: block;
         z-index: 200;
         font-weight: 700;
-        transition: 0.15s step-end;
+        transition: 0.3s ease-in-out;
     }
     .toggle-open{
         color: var(--darkgrey);
