@@ -8,9 +8,21 @@ export default function Footer() {
         Kelemen
       </p>
       <div className="contacts">
-        <a href="https://www.linkedin.com/in/davidkelemen/">LinkedIn</a>
+        <a
+          href="https://www.linkedin.com/in/davidkelemen/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          LinkedIn
+        </a>
         <p>|</p>
-        <a href="mailto: hello@davidkelemen.com">hello@davidkelemen.com</a>
+        <a
+          href="mailto: hello@davidkelemen.com"
+          target="_blank"
+          rel="noreferrer"
+        >
+          hello@davidkelemen.com
+        </a>
       </div>
     </div>
   );

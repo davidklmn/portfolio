@@ -13,7 +13,7 @@
 }
 
 .footer-container .contacts{
-    width: 50%;
+    width: 30%;
     display: flex;
     justify-content: space-evenly;
 }
@@ -33,7 +33,7 @@
     color: var(--darkyellow);
 }
 
-@media (max-width: 576px){
+@media (max-width: 1000px){
     .footer-container .contacts{
         width: 80%;
     }
