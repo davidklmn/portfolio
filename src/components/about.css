@@ -11,7 +11,7 @@
 }
 
 .about-container p {
-    width: 80%;
+    width: 90%;
     font-size: 6rem;
     margin: auto;
     letter-spacing: -5px;
@@ -24,8 +24,8 @@
 
 @media (max-width: 800px){
     #split{
-        font-size: 4rem;
-        line-height: 5rem;
+        font-size: 3rem;
+        line-height: 4rem;
     }
     .about-container p {
     width: 100%;
