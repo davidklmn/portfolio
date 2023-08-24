@@ -89,4 +89,7 @@
     .contact-container{
         height: 600px;
     }
+    .form-container form{
+        width: 80%;
+    }
 }

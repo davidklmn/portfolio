@@ -26,6 +26,12 @@
     color: var(--textcolor);
 }
 
-.footer-container a:hover{
+.footer-container .contacts a:hover{
     color: var(--darkyellow);
+}
+
+@media (max-width: 576px){
+    .footer-container .contacts{
+        width: 80%;
+    }
 }
