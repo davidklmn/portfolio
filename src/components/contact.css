@@ -74,7 +74,7 @@
 #submit {
     margin: auto;
     font-size: 1.25rem;
-    font-weight: 800;
+    font-family: "JosefinSansRoman-Bold";
     width: 100px;
     height: 40px;
     background-color: var(--darkgrey);
@@ -94,8 +94,10 @@
     width: 40px;
     border-radius: 50%;
     color: var(--darkyellow);
-    background-color: rgb(3, 131, 3);
-    transform: rotate(720deg) ;
+    background-color: var(--textcolor);
+    transform: rotate(360deg);
+    text-indent: 0;
+    border: none;
 }
 
 @media (max-width: 576px){
