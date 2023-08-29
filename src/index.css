@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "JosefinSans";
+  font-family: "JosefinSans", "JosefinSansRoman-Bold";
   src: local("JosefinSans"),
   url(./fonts/JosefinSans.ttf) format('truetype');
 }
@@ -16,14 +16,14 @@ html{
 
 body {
   margin: 0;
-  font-family: 'JosefinSans' !important;
+  font-family: 'JosefinSans' "JosefinSansRoman-Bold" !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
 }
 
 code {
-  font-family: 'JosefinSans'
+  font-family: 'JosefinSans', "JosefinSansRoman-Bold"
 }
 
 /* Lenis recommended CSS */
