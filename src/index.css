@@ -17,10 +17,6 @@ body {
   overflow-x: hidden;
 }
 
-/* code {
-  font-family: 'JosefinSans', "JosefinSansRoman-Bold"
-} */
-
 /* Lenis recommended CSS */
 html.lenis {
   height: auto;
