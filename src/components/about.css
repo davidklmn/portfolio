@@ -6,6 +6,7 @@
     padding: 60px;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -18,8 +19,84 @@
     line-height: 6rem;
 }
 
+.about-container .about-me {
+    display: block !important;
+    width: 200px;
+    left: 40%;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: normal;
+
+    cursor: pointer;
+    transition: 0.35s ease;
+}
+
+.about-me:hover {
+    letter-spacing: 5px;
+}
+
 #split{
     font-kerning: none;
+}
+
+/* About popup modal */
+.about-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    width: 800px;
+    max-width: 80%;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+
+    border: 3px solid white;
+    border-radius: 25px;
+    z-index: 9999;
+    background-color: var(--darkgrey);
+    color: var(--textcolor);
+}
+
+.about-modal.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.about-modal-body {
+    padding: 0 40px 30px 40px;
+}
+
+.modal-close {
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    color: var(--textcolor);
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.modal-overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    pointer-events: none;
+    transition: 200ms ease-in-out;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    pointer-events: all;
 }
 
 @media (max-width: 800px){
@@ -29,5 +106,12 @@
     }
     .about-container p {
     width: 100%;
+    letter-spacing: -2px;
+    }
+    .about-container .about-me {
+        font-size: 1rem;
+    }
+    .about-modal-body {
+    font-size: 1.25rem;
     }
 }
