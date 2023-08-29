@@ -21,8 +21,8 @@
 
 .about-container .about-me {
     display: block !important;
+    margin: auto;
     width: 200px;
-    left: 40%;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1.5rem;
@@ -102,7 +102,7 @@
 @media (max-width: 800px){
     #split{
         font-size: 3rem;
-        line-height: 3rem;
+        line-height: 3.5rem;
     }
     .about-container p {
         width: 100%;
