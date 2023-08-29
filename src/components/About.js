@@ -40,8 +40,8 @@ export default function About() {
   const modal = document.getElementById("about-modal");
 
   function aboutMe() {
-    // modal.classList.add("active");
-    // modalOverlay.classList.add("active");
+    modal.classList.add("active");
+    modalOverlay.classList.add("active");
     console.log("heylo");
   }
 

@@ -42,33 +42,33 @@ export default function Skills() {
         <div className="skill-row">
           <div className="skill">
             <IconHtml5 width={150} height={150} className="skill-icon" />
-            <h2>Html</h2>
+            <h2 className="skill-name">Html</h2>
           </div>
           <div className="skill">
             <IconCss3 width={150} height={150} className="skill-icon" />
-            <h2>Css</h2>
+            <h2 className="skill-name">Css</h2>
           </div>
           <div className="skill">
             <IconBootstrap width={150} height={150} className="skill-icon" />
-            <h2>Bootstrap</h2>
+            <h2 className="skill-name">Bootstrap</h2>
           </div>
           <div className="skill">
             <IconJavascript width={150} height={150} className="skill-icon" />
-            <h2>Javascript</h2>
+            <h2 className="skill-name">Javascript</h2>
           </div>
         </div>
         <div className="skill-row">
           <div className="skill">
             <IconJquery width={150} height={150} className="skill-icon" />
-            <h2>Jquery</h2>
+            <h2 className="skill-name">Jquery</h2>
           </div>
           <div className="skill">
             <IconNodejs width={150} height={150} className="skill-icon" />
-            <h2>Nodejs</h2>
+            <h2 className="skill-name">Nodejs</h2>
           </div>
           <div className="skill">
             <IconReact width={150} height={150} className="skill-icon" />
-            <h2>React</h2>
+            <h2 className="skill-name">React</h2>
           </div>
         </div>
       </div>

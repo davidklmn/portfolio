@@ -81,7 +81,7 @@
     color: var(--darkyellow);
     border: 2px solid var(--darkyellow);
     border-radius: 10px;
-    text-indent: 0;
+    text-indent: 0 !important;
     transition: all 0.35s;
 }
 
@@ -96,7 +96,7 @@
     color: var(--darkyellow);
     background-color: var(--textcolor);
     transform: rotate(360deg);
-    text-indent: 0;
+    text-indent: 0 !important;
     border: none;
 }
 
