@@ -36,10 +36,10 @@ export default function About() {
     runSplit();
   });
 
-  const modalOverlay = document.querySelector(".modal-overlay");
-  const modal = document.getElementById("about-modal");
-
   function aboutMe() {
+    const modalOverlay = document.querySelector(".modal-overlay");
+    const modal = document.getElementById("about-modal");
+
     modal.classList.add("active");
     modalOverlay.classList.add("active");
     console.log("heylo");

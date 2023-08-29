@@ -61,7 +61,7 @@
         width: 125px;
         height: 125px;
     }
-    .skills-container h2 {
+    .skills-container .skill-name {
         font-size: 1.25rem;
         font-weight: 800;
     }
