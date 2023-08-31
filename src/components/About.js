@@ -42,17 +42,23 @@ export default function About() {
 
     modal.classList.add("active");
     modalOverlay.classList.add("active");
-    console.log("heylo");
+    console.log("open modal");
   }
 
-  function closeAboutMe() {}
+  function closeAboutMe() {
+    const modalOverlay = document.querySelector(".modal-overlay");
+    const modal = document.getElementById("about-modal");
+
+    modal.classList.remove("active");
+    modalOverlay.classList.remove("active");
+  }
 
   return (
     <div id="about" className="about-container">
       <div>
         <p id="split">
-          I am an enthusiastic Front-End Developer who loves responsive
-          user-friendly design... and I looooove pizaaaaaa...
+          I am an enthusiastic Front-End Developer who loves responsive,
+          user-friendly design. I bring digital experiences to life.
           <span className="about-me" onClick={aboutMe}>
             Read more
           </span>
