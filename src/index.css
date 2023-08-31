@@ -14,7 +14,7 @@ body {
   font-family: "JosefinSans" !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* Lenis recommended CSS */

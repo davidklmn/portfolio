@@ -1,5 +1,8 @@
 import "./projects.css";
-import scShot from "../pictures/portfolio_site.png";
+import portfolioIMG from "../pictures/portfolio_site.png";
+import project1IMG from "../pictures/geezer.png";
+import project2IMG from "../pictures/devhub.png";
+import quizIMG from "../pictures/quiz.html.png";
 
 export default function Projects() {
   return (
@@ -12,34 +15,34 @@ export default function Projects() {
             <h2>Portfolio</h2>
           </div>
           <div className="card-image">
-            <img className="proj-img" src={scShot} alt="portfolio" />
+            <img className="proj-img" src={portfolioIMG} alt="portfolio" />
           </div>
         </div>
         <div id="card2" className="cards small-card">
           <div className="card-text">
-            <p>Project</p>
-            <h2>Portfolio</h2>
+            <p>API Project</p>
+            <h2>Devhub</h2>
           </div>
           <div className="card-image">
-            <img className="proj-img" src={scShot} alt="portfolio" />
+            <img className="proj-img" src={project2IMG} alt="portfolio" />
           </div>
         </div>
         <div id="card3" className="cards small-card">
           <div className="card-text">
             <p>Project</p>
-            <h2>Portfolio</h2>
+            <h2>Quiz</h2>
           </div>
           <div className="card-image">
-            <img className="proj-img" src={scShot} alt="portfolio" />
+            <img className="proj-img" src={quizIMG} alt="portfolio" />
           </div>
         </div>
         <div id="card4" className="cards">
           <div className="card-text">
-            <p>Project</p>
-            <h2>Portfolio</h2>
+            <p>Song lyrics Project</p>
+            <h2>Geezer</h2>
           </div>
           <div className="card-image">
-            <img className="proj-img" src={scShot} alt="portfolio" />
+            <img className="proj-img" src={project1IMG} alt="portfolio" />
           </div>
         </div>
       </div>

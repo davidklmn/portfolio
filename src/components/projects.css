@@ -80,24 +80,32 @@
     grid-row-start: 1;
     grid-column-start: 1;
     grid-column-end: 16;
+
+    background-color: #f8c735;
 }
 
 #card2 {
     grid-row-start: 1;
     grid-column-start: 17;
     grid-column-end: 26;
+
+    background-color: #2f506f;
 }
 
 #card3 {
     grid-row-start: 3;
     grid-column-start: 1;
     grid-column-end: 10;
+
+    background-color: #e6e6e6;
 }
 
 #card4 {
     grid-row-start: 3;
     grid-column-start: 11;
     grid-column-end: 26;
+
+    background-color: #045071;
 }
 
 .card-image {
