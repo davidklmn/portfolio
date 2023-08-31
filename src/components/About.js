@@ -59,10 +59,10 @@ export default function About() {
         <p id="split">
           I am an enthusiastic Front-End Developer who loves responsive,
           user-friendly design. I bring digital experiences to life.
-          <span className="about-me" onClick={aboutMe}>
-            Read more
-          </span>
         </p>
+        <span className="about-me" onClick={aboutMe}>
+          Read more about me
+        </span>
       </div>
 
       <div className="about-modal" id="about-modal">
