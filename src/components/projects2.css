@@ -1,5 +1,91 @@
+.projects2{
+    background-color: var(--textcolor);
+}
+
 .projects2-container{
     width: 80%;
-    height: 100%;
-    background-color: white;
+    height: 80%;
+    margin: 0 auto;
+    padding-top: 30px;
 }
+
+.projects2-container h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--darkgrey);
+    text-align: center;
+}
+
+.projects2-container .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+}
+
+.projects2-container .cards-container .card-item {
+    background-color: var(--textcolor);
+    color: var(--darkgrey);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: none;
+
+    transition: all 0.35s ease-in-out;
+}
+
+.projects2-container .cards-container .card-item .card:hover {
+    filter: grayscale(0.5);
+    cursor: pointer;
+}
+
+.projects2-container .cards-container .card-item .card{
+    border: none;
+    box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
+    border-radius: 0.25rem;
+}
+
+.projects2-container .card .image img{
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    
+}
+
+.projects2-container .card .title{
+    text-align: end;
+    font-size: 2rem;
+;
+
+}
+.projects2-container .card .sub-title{
+    text-align: end;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.projects2-container .card .description{
+    display: none;
+}
+
+.projects2-container .card .github-link{
+    display: none;
+}
+
+.projects2-container .card .site-link{
+    display: none;
+}
+
+@media (min-width: 800px) {
+    .projects2-container .cards-container .card-item {
+      width: 100%;
+    }
+  }
+  
+@media (min-width: 1200px) {
+    .projects2-container .cards-container .card-item {
+      width: 50%;
+    }
+  }
