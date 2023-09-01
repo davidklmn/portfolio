@@ -126,7 +126,6 @@
     border-top-left-radius: 25px;
 }
 
-
 @media (max-width: 1008px){
     .card-container{
         grid-template-rows: 400px 30px 400px 30px 400px 30px 400px;

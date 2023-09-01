@@ -2,7 +2,7 @@ import "./App.css";
 import Navigation from "./components/Navigation";
 import Home from "./components/Home";
 import About from "./components/About";
-import Projects from "./components/Projects";
+import Projects2 from "./components/Projects2";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -27,7 +27,7 @@ function App() {
       <Navigation />
       <Home />
       <About />
-      <Projects />
+      <Projects2 />
       <Skills />
       <Contact />
       <Footer />
