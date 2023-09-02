@@ -1,14 +1,35 @@
+import { useState } from "react";
+
 import "./projects2.css";
 import { data } from "./projectData";
 
 export default function Projects2() {
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  const projectToggle = (i) => {
+    if (selectedProject === i) {
+      return setSelectedProject(null);
+    }
+
+    setSelectedProject(i);
+    console.log(i);
+  };
+
   return (
     <div id="projects2" className="projects2">
       <div className="projects2-container">
         <h1>PROJECTS.</h1>
         <div className="cards-container">
           {data.map((item, i) => (
-            <div className="card-item" key={i}>
+            <div
+              className={
+                selectedProject === i
+                  ? "card-item selected-project"
+                  : "card-item"
+              }
+              key={i}
+              onClick={() => projectToggle(i)}
+            >
               <div className="card">
                 <div className="image">{item.image}</div>
                 <div className="card-content">
