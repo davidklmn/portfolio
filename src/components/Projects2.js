@@ -6,13 +6,45 @@ import { data } from "./projectData";
 export default function Projects2() {
   const [selectedProject, setSelectedProject] = useState(null);
 
-  const projectToggle = (i) => {
-    if (selectedProject === i) {
-      return setSelectedProject(null);
-    }
+  const projectExpand = (item, i) => {
+    // Targeting the currently clicked card
+    const targetCard = item.currentTarget;
+    console.log(targetCard, i);
 
-    setSelectedProject(i);
-    console.log(i);
+    // Cloning targeted card
+    const cardClone = targetCard.cloneNode(true);
+    console.log(cardClone);
+
+    //Get the location and the size of the clicked card with getBoundingClientRect() method
+    const { top, left, width, height } = targetCard.getBoundingClientRect();
+
+    //Positioning the cloned card on the top of the original card
+    cardClone.style.position = "fixed";
+    cardClone.style.top = top + "px";
+    cardClone.style.left = left + "px";
+    cardClone.style.width = width + "px";
+    cardClone.style.height = height + "px";
+    //Hide the original card using opacity
+    targetCard.style.opacity = "0";
+    //Appending the cloned card into the same container(parent) as the original
+    targetCard.parentNode.appendChild(cardClone);
+    cardClone.classList.add(".expanded");
+    //
+    requestAnimationFrame(() => {
+      cardClone.style.transition = `
+      width 5s ease-in-out
+      height 5s ease-in-out
+      left 5s ease-in-out
+      top 5s ease-in-out
+      `;
+      cardClone.style.zIndex = "9999";
+      cardClone.style.top = 0;
+      cardClone.style.left = 0;
+      cardClone.style.width = "100vw";
+      cardClone.style.height = "100vh";
+      cardClone.style.padding = "0";
+      cardClone.style.backgroundColor = "var(--darkgrey)";
+    });
   };
 
   return (
@@ -22,13 +54,11 @@ export default function Projects2() {
         <div className="cards-container">
           {data.map((item, i) => (
             <div
-              className={
-                selectedProject === i
-                  ? "card-item selected-project"
-                  : "card-item"
-              }
+              className="card-item"
               key={i}
-              onClick={() => projectToggle(i)}
+              onClick={(item) => {
+                projectExpand(item, i);
+              }}
             >
               <div className="card">
                 <div className="image">{item.image}</div>

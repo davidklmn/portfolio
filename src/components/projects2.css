@@ -104,17 +104,13 @@
     display: none;
 }
 
-/*! Function seSelectedProject styles */
+/** Expanded card styles  */
 
-.projects2-container .hidden-project {
-    display: none;
+.projects2-container .card-item .expanded{
+    opacity: 0.1;
 }
 
-.projects2-container .selected-project {
-    width: 100%;
-}
-
-/*! Media queries */
+/** Media queries */
 
 @media (min-width: 800px) {
     .projects2-container .card-item {
