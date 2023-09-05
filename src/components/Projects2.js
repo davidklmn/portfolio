@@ -1,11 +1,7 @@
-import { useState } from "react";
-
 import "./projects2.css";
 import { data } from "./projectData";
 
 export default function Projects2() {
-  const [selectedProject, setSelectedProject] = useState(null);
-
   const projectExpand = (item, i) => {
     // Targeting the currently clicked card
     const targetCard = item.currentTarget;
@@ -14,7 +10,6 @@ export default function Projects2() {
     // Cloning targeted card
     const cardClone = targetCard.cloneNode(true);
     console.log(cardClone);
-
     //Get the location and the size of the clicked card with getBoundingClientRect() method
     const { top, left, width, height } = targetCard.getBoundingClientRect();
 
@@ -28,23 +23,19 @@ export default function Projects2() {
     targetCard.style.opacity = "0";
     //Appending the cloned card into the same container(parent) as the original
     targetCard.parentNode.appendChild(cardClone);
-    cardClone.classList.add(".expanded");
-    //
+    cardClone.classList.add("expanded");
+    //Expanding animation
     requestAnimationFrame(() => {
-      cardClone.style.transition = `
-      width 5s ease-in-out
-      height 5s ease-in-out
-      left 5s ease-in-out
-      top 5s ease-in-out
-      `;
-      cardClone.style.zIndex = "9999";
       cardClone.style.top = 0;
       cardClone.style.left = 0;
       cardClone.style.width = "100vw";
       cardClone.style.height = "100vh";
-      cardClone.style.padding = "0";
-      cardClone.style.backgroundColor = "var(--darkgrey)";
+      cardClone.style.zIndex = "9999";
     });
+
+    window.setTimeout(function () {
+      cardClone.classList.add("expanded-animation");
+    }, "175");
   };
 
   return (
@@ -66,15 +57,20 @@ export default function Projects2() {
                   <div className="sub-title">{item.projectName}</div>
                   <div className="title">{item.name}</div>
                   <div className="description">{item.description}</div>
-                  <div className="github-link">
-                    <a href={item.githubLink} target="blank">
-                      gitHub
-                    </a>
-                  </div>
-                  <div className="site-link">
-                    <a href={item.siteLink} target="blank">
-                      Site
-                    </a>
+                  <div className="project-links-container">
+                    <p>Check it out on:</p>
+                    <div className="project-links">
+                      <div className="github-link">
+                        <a href={item.githubLink} target="blank">
+                          gitHub
+                        </a>
+                      </div>
+                      <div className="site-link">
+                        <a href={item.siteLink} target="blank">
+                          Site
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

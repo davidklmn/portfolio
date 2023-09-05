@@ -38,14 +38,15 @@
     cursor: pointer;
 }
 
-.projects2-container .card:hover > .card-content {
+.projects2-container .card:hover  > .card-content {
     box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 1);
 }
 
-.projects2-container .card:hover > .card-content > .title {
+.projects2-container .card:hover  > .card-content > .title {
     padding-right: 50px;
 }
-.projects2-container .card:hover > .card-content > .sub-title {
+
+.projects2-container .card:hover  > .card-content > .sub-title {
     padding-right: 50px;
 }
 
@@ -71,43 +72,196 @@
     vertical-align: middle;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    transition: all 0.35s ease-in-out;
 }
 
 .projects2-container .title{
-    text-align: end;
+    padding-right: 30px;
+    text-align: right;
     font-size: 2rem;
     transition: all 0.5s cubic-bezier( 0.79, 0.33, 0.14, 0.53 );
-    transition-delay: 0.10s
-;
-
+    transition-delay: 0.10s;
 }
+
 .projects2-container .sub-title{
+    padding-right: 30px;
     text-align: end;
     text-transform: uppercase;
     letter-spacing: 5px;
     transition: all 0.5s cubic-bezier( 0.79, 0.33, 0.14, 0.53 );
 }
 
-.projects2-container .title, .sub-title{
-    padding-right: 30px;
-}
-
 .projects2-container .description{
     display: none;
 }
 
+.projects2-container .project-links-container{
+    display: none;
+    margin: auto;
+    margin-top: 25px;
+    align-items: center;
+}
+
+.projects2-container .project-links {
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.projects2-container .project-links-container a{
+    text-decoration: none;
+}
+
+.projects2-container .project-links-container a:link {
+    text-decoration: none;
+    color: var(--textcolor);
+    transition: 0.5s ease;
+}
+
+.projects2-container .project-links-container a:visited{
+    text-decoration: none;
+    color: var(--textcolor);
+}
+
 .projects2-container .github-link{
     display: none;
+    text-align: center;
+    padding: 5px;
+    width: 80px;
+    font-weight: 800;
+    cursor: pointer;
 }
 
 .projects2-container .site-link{
     display: none;
+    width: 80px;
+    text-align: center;
+    padding: 5px;
+    font-weight: 800;
+    cursor: pointer;
 }
 
 /** Expanded card styles  */
 
-.projects2-container .card-item .expanded{
-    opacity: 0.1;
+.projects2-container .card-item.expanded{
+    background-color: var(--darkgrey);
+    padding: 0;
+    transition: all 0.35s ease-in-out;
+}
+
+.projects2-container .card-item.expanded .card-content{
+    box-shadow: none;
+}
+
+.projects2-container .card-item.expanded .title{
+    opacity: 0;
+    transition: all 0.5s cubic-bezier( 0.79, 0.33, 0.14, 0.53 );
+    transition-delay: 0.5s;
+}
+.projects2-container .card-item.expanded .sub-title{
+    opacity: 0;
+    transition: all 0.5s cubic-bezier( 0.79, 0.33, 0.14, 0.53 );
+    transition-delay: 0.4s;
+}
+
+.projects2-container .card-item.expanded .project-links-container{
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: all 0.5s cubic-bezier( 0.79, 0.33, 0.14, 0.53 );
+    transition-delay: 0.65s;
+}
+
+.projects2-container .card-item.expanded .description{
+    display: flex;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 1.25rem;
+    width: 80%;
+    margin: auto;
+
+    opacity: 0;
+    transition: all 0.5s cubic-bezier( 0.79, 0.33, 0.14, 0.53 );
+    transition-delay: 0.6s;
+}
+
+.projects2-container .card-item.expanded .github-link{
+    display: block;
+    opacity: 0;
+    
+    transition: all 0.5s cubic-bezier( 0.79, 0.33, 0.14, 0.53 );
+    transition-delay: 0.7s;
+}
+
+.projects2-container .card-item.expanded .site-link{
+    display: block;
+    opacity: 0;
+
+    transition: all 0.5s cubic-bezier( 0.79, 0.33, 0.14, 0.53 );
+    transition-delay: 0.8s;
+}
+
+/** Animation after expansion */
+.projects2-container .card-item.expanded-animation img{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 800px;
+    border-radius: 15px;
+}
+
+.projects2-container .card-item.expanded-animation .title{
+    text-align: center;
+    opacity: 1;
+    padding: 0;
+}
+
+.projects2-container .card-item.expanded-animation .sub-title{
+    text-align: center;
+    opacity: 1;
+    padding: 0;
+}
+
+.projects2-container .card-item.expanded-animation .project-links-container{
+    opacity: 1;
+}
+
+.projects2-container .card-item.expanded-animation .description{
+    display: block;
+    opacity: 1;
+}
+
+.projects2-container .card-item.expanded-animation .github-link{
+    display: block;
+    opacity: 1;
+}
+
+.projects2-container .card-item.expanded-animation .site-link{
+    display: block;
+    opacity: 1;
+}
+
+/**Disable hover while expanded  */
+.projects2-container .card-item.expanded .card:hover{
+    filter: none;
+    top: 0;
+    cursor: auto;
+}
+
+.projects2-container .card-item.expanded .card:hover > .card-content{
+    box-shadow: none;
+}
+
+.projects2-container .card-item.expanded .card:hover > .card-content > .title{
+    padding-right: 0px;
+}
+
+.projects2-container .card-item.expanded .card:hover > .card-content > .sub-title{
+    padding-right: 0px;
 }
 
 /** Media queries */
