@@ -35,7 +35,7 @@ export default function Projects2() {
 
     window.setTimeout(function () {
       cardClone.classList.add("expanded-animation");
-    }, "175");
+    }, "100");
   };
 
   return (
