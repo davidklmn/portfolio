@@ -36,6 +36,19 @@ export default function Projects2() {
     window.setTimeout(function () {
       cardClone.classList.add("expanded-animation");
     }, "100");
+
+    //* Generating close button and its function
+    const closeButton = document.createElement("button");
+    closeButton.classList.add("close-button");
+    cardClone.appendChild(closeButton);
+
+    closeButton.addEventListener("click", async () => {
+      closeButton.remove();
+      cardClone.classList.remove("expanded-animation");
+      cardClone.classList.remove("expanded");
+      cardClone.remove();
+      targetCard.style.opacity = "1";
+    });
   };
 
   return (
