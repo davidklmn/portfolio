@@ -54,7 +54,7 @@ export default function Contact() {
 
     console.log("success!");
     setEmailSent((current) => !current);
-    submitButton.textContent = "✓";
+    submitButton.innerHTML = "✓";
     submitButton.disabled = true;
   }
 
