@@ -41,7 +41,7 @@ export default function Projects2() {
     //* Generating close button and its function
     const closeButton = document.createElement("button");
     closeButton.classList.add("close-button");
-    closeButton.textContent = `&times`;
+    closeButton.textContent = "X";
     cardClone.appendChild(closeButton);
 
     closeButton.addEventListener("click", async () => {
