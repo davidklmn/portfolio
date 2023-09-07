@@ -31,6 +31,7 @@ export default function Projects2() {
       cardClone.style.width = "100vw";
       cardClone.style.height = "100vh";
       cardClone.style.zIndex = "9999";
+      cardClone.style.overflow = "auto";
     });
 
     window.setTimeout(function () {
