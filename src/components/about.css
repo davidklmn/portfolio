@@ -63,6 +63,32 @@
     z-index: 9999;
     background-color: var(--darkgrey);
     color: var(--textcolor);
+    overflow-y: scroll;
+}
+
+.about-modal::-webkit-scrollbar {
+    width: 8px;
+}
+
+.about-modal::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 30px;
+}
+
+.about-modal::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: 50px; 
+    margin-top: 30px;
+}
+
+.about-modal::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.about-modal::-webkit-scrollbar-thumb {
+    background-color: var(--darkyellow);
+    border-radius: 10px;
+    height: 10px;
 }
 
 .about-modal.active{

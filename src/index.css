@@ -17,6 +17,21 @@ body {
   overflow-x: hidden;
 }
 
+/* Scrollbar */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--darkyellow);
+  border: 1px var(--darkgrey) solid;
+  border-radius: 10px;
+}
+
 /* Lenis recommended CSS */
 /* html.lenis {
   height: auto;

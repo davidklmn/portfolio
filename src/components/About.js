@@ -70,21 +70,26 @@ export default function About() {
           &times;
         </button>
         <h2 className="about-modal-body">
-          Praesent eu ultrices ligula. Class aptent taciti sociosqu ad litora
-          torquent per conubia nostra, per inceptos himenaeos. Etiam malesuada
-          at risus sit amet porta. Phasellus ornare eget ante vitae dignissim.
-          Praesent eu nisi sodales, consectetur arcu vel, dignissim ex. Donec
-          rhoncus molestie sollicitudin. Nulla facilisis, lacus ut rhoncus
-          tincidunt, nunc dolor pulvinar magna, venenatis ultricies dui diam a
-          eros. Suspendisse sit amet interdum magna. Donec vulputate, magna non
-          convallis porttitor, dui sapien viverra lectus, sagittis congue libero
-          elit faucibus nisl. Etiam sodales, mi eu convallis congue, enim sapien
-          gravida arcu, at dictum quam orci quis sem. Morbi a lorem at metus
-          lacinia scelerisque at eget dolor. Nam eros orci, malesuada tincidunt
-          feugiat in, laoreet ut lorem. Duis eu mauris ipsum. Fusce ullamcorper
-          magna vel finibus venenatis. Cras arcu augue, porttitor eu dignissim
-          non, semper non tellus. Duis vulputate magna ultricies diam finibus,
-          non vulputate tellus egestas.
+          I was born and grew up in Hungary. Relocated to the UK in 2016 and
+          progressing ever since.
+          <br />
+          <br /> Not long after I found my place in the new country I have
+          started to figure out what I really wanted to do in my life. I have
+          touched UI/UX and logo design, 3D modelling and these slowly directed
+          me to the path of web-development.
+          <br />
+          <br /> I have a real passion for tech and web-development, especially
+          for responsive designs. I feel confused when I find a page which is
+          not designed for mobile in 2023...
+          <br />
+          <br />I have finished a very intensive bootcamp and learning every day
+          since. While doing the studies I have managed to progress at my
+          current workplace as well and secured a position as a Team Manager.
+          <br />
+          <br />
+          It was very challenging to study at my workplace and at home at the
+          same time but I believe pushing ourselves out of the comfort zone is
+          the key to success.
         </h2>
       </div>
       <div className="modal-overlay"></div>
