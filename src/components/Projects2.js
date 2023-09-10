@@ -54,7 +54,7 @@ export default function Projects2() {
   };
 
   return (
-    <div id="projects2" className="projects2">
+    <div id="projects" className="projects2">
       <div className="projects2-container">
         <h1>PROJECTS.</h1>
         <div className="cards-container">
