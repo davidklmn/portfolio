@@ -8,7 +8,15 @@ export const data = [
     name: "Portfolio",
     projectName: "Project",
     image: <img src={portfolioIMG} />,
-    description: "This is my biggest project yet, my potrtfolio.",
+    description: (
+      <p>
+        I have created this portfolio to showcase my projects. In this project I
+        used <span>React</span>, <span>JavaScript</span> and basic{" "}
+        <span>CSS</span> and <span>HTML</span>. <br /> Also used{" "}
+        <span>GSAP</span> and <span>Split Type</span> for scroll animations.{" "}
+        <br /> Deployed on gitHub pages with react-gh-pages.
+      </p>
+    ),
     githubLink: "https://github.com/davidklmn/portfolio",
     siteLink: "davidkelemen.com",
   },
