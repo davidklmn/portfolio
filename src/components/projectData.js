@@ -16,7 +16,7 @@ export const data = [
         basic <span>CSS</span> and <span>HTML</span>.
         <br />
         Also used <span>GSAP</span> and <span>Split Type</span> for scroll
-        animations.
+        animations and <span>EmailJS</span> to handle emails.
         <br />
         Deployed on gitHub pages with react-gh-pages.
       </p>

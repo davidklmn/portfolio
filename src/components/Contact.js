@@ -15,32 +15,32 @@ export default function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    // if (userName.length === 0) {
-    //   alert("Name cannot be empty");
-    //   return;
-    // } else if (userEmail.length === 0) {
-    //   alert("Email cannot be empty");
-    //   return;
-    // } else if (message.length === 0) {
-    //   alert("Write a message, please!");
-    //   return;
-    // }
+    if (userName.length === 0) {
+      alert("Name cannot be empty");
+      return;
+    } else if (userEmail.length === 0) {
+      alert("Email cannot be empty");
+      return;
+    } else if (message.length === 0) {
+      alert("Write a message, please!");
+      return;
+    }
 
-    // emailjs
-    //   .sendForm(
-    //     "service_mfw3zxk",
-    //     "template_dd6g67l",
-    //     form.current,
-    //     "ETWB3HYBoOPQFvkZo"
-    //   )
-    //   .then(
-    //     (result) => {
-    //       console.log(result.text);
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //     }
-    //   );
+    emailjs
+      .sendForm(
+        "service_mfw3zxk",
+        "template_dd6g67l",
+        form.current,
+        "ETWB3HYBoOPQFvkZo"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
 
     setUserName("");
     setUserEmail("");
