@@ -10,11 +10,15 @@ export const data = [
     image: <img src={portfolioIMG} />,
     description: (
       <p>
-        I have created this portfolio to showcase my projects. In this project I
-        used <span>React</span>, <span>JavaScript</span> and basic{" "}
-        <span>CSS</span> and <span>HTML</span>. <br /> Also used{" "}
-        <span>GSAP</span> and <span>Split Type</span> for scroll animations.{" "}
-        <br /> Deployed on gitHub pages with react-gh-pages.
+        I have created this portfolio to showcase my projects.
+        <br />
+        In this project I used <span>React</span>, <span>JavaScript</span> and
+        basic <span>CSS</span> and <span>HTML</span>.
+        <br />
+        Also used <span>GSAP</span> and <span>Split Type</span> for scroll
+        animations.
+        <br />
+        Deployed on gitHub pages with react-gh-pages.
       </p>
     ),
     githubLink: "https://github.com/davidklmn/portfolio",
@@ -24,8 +28,19 @@ export const data = [
     name: "Geezer",
     projectName: "Song Lyrics API Project",
     image: <img src={geezerIMG} />,
-    description:
-      "This project was made by me and another bootcamp student. We have learnt a lot about how to deliver an app while pair programming.",
+    description: (
+      <p>
+        In this app you are able to search for a track, listen to it and read
+        the lyrics.
+        <br />
+        Used <span>jQuery</span>, <span>Bootstrap</span> and two{" "}
+        <span>API</span>s.
+        <br />
+        This was my first bootcamp project what I've done with another student
+        and learnt a lot from being able to communicate about a project and how
+        to bring it to life.
+      </p>
+    ),
     githubLink: "https://github.com/alecerf01/Geezer-Project",
     siteLink: "https://alecerf01.github.io/Geezer-Project/",
   },
@@ -33,8 +48,16 @@ export const data = [
     name: "DevHub",
     projectName: "API Project",
     image: <img src={devhubIMG} />,
-    description:
-      "This project was made by me and other 2 bootcamp student. We have learnt a lot acout API and how to process data.",
+    description: (
+      <p>
+        This final botcamp project have been created to be able to search jobs
+        in your area and find news about web-development.
+        <br />
+        Used <span>React</span>, <span>React-Bootstrap</span> and two{" "}
+        <span>API</span>s.
+        <br />
+      </p>
+    ),
     githubLink: "https://github.com/davidklmn/devhub-project",
     siteLink: "https://devhub-project.netlify.app/home",
   },
@@ -42,7 +65,11 @@ export const data = [
     name: "Coding Quiz",
     projectName: "Project",
     image: <img src={quizIMG} />,
-    description: "Quiz game project",
+    description: (
+      <p>
+        A simple coding quiz project using <span>JavaScript</span>
+      </p>
+    ),
     githubLink: "https://github.com/davidklmn/quiz-game-module6",
     siteLink: "https://davidklmn.github.io/quiz-game-module6/",
   },

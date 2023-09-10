@@ -195,6 +195,8 @@
 
 .projects2-container .card-item.expanded .description span{
     font-weight: 800;
+    font-size: 1.35rem;
+    color: var(--darkyellow);
 }
 
 
