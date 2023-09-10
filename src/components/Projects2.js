@@ -39,7 +39,7 @@ export default function Projects2() {
     }, "100");
 
     //* Generating close button and its function
-    const closeButton = document.createElement("button");
+    const closeButton = document.createElement("p");
     closeButton.classList.add("close-button");
     closeButton.innerHTML = "X";
     cardClone.appendChild(closeButton);
